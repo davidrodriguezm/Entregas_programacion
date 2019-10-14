@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.Scanner;
 
 public class E8_15 {
@@ -6,6 +8,7 @@ public class E8_15 {
         System.out.println("introduce un numero para saber cuantos números primos hay entre 1 y ese numero ");
         int numero = teclado.nextInt();
         int i, z, divisor;
+        int contador = 0;
         for (i = 2; i <= numero; i++) {
             divisor = 0;
             for (z = 2; z <= i; z++) {
@@ -15,7 +18,9 @@ public class E8_15 {
             }
             if (divisor == 1){
                 System.out.println("es primo " + i);
+                contador++;
             }
         }
+        System.out.println("hay " + contador + " primos ");
     }
 }
