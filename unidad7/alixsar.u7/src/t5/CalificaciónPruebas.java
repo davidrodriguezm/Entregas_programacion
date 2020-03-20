@@ -16,12 +16,12 @@ public abstract class CalificaciónPruebas {
         Scanner teclado = new Scanner(System.in);
         ArrayList<Float> notas = new ArrayList<Float>();
         HashSet<Integer> num_identificadores = null;
-        try ( ObjectInputStream entrada = new ObjectInputStream( new FileInputStream("src\\t5\\numero_identificativos.dat")) ){
+        try ( ObjectInputStream entrada = new ObjectInputStream( new FileInputStream("src\\t5\\ids_aspirantes.dat")) ){
             num_identificadores = (HashSet<Integer>) entrada.readObject();
         } catch ( Exception e) {
             System.out.println(e.getMessage());
         }
-        System.out.println("Introduzca el numero de identificacion del aspirante");
+        System.out.println("Introduzca el numero de identificacion del aspirante\nnumeros de aspirantes: " + num_identificadores);
         Integer identificador = teclado.nextInt();
         teclado.nextLine();
         if ( num_identificadores.contains(identificador) ) {
@@ -34,18 +34,19 @@ public abstract class CalificaciónPruebas {
                 } else {
                     System.out.println("Calificación no valida (float) de 0 al 10");
                 }
-                System.out.println("Para continuar Calificando Introduzca (int): 1, otro parar");
+                System.out.println("Para continuar Calificando este aspirante Introduzca (int): 1, otro parar");
                 i = teclado.nextInt();
                 teclado.nextLine();
             }
             lista_calificaciones.put(identificador,notas);
-            try (ObjectOutputStream salida = new ObjectOutputStream( new FileOutputStream("src\\t5\\calificaciones.dat"))){
-                salida.writeObject(lista_calificaciones);
-            } catch ( Exception e) {
-                System.out.println(e.getMessage());
-            }
-        } else {
-            System.out.println("No existe ese aspirante");
+        }
+    }
+
+    public static void guardarFichero() {
+        try (ObjectOutputStream salida = new ObjectOutputStream( new FileOutputStream("src\\t5\\calificaciones.dat"))){
+            salida.writeObject(lista_calificaciones);
+        } catch ( Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 }

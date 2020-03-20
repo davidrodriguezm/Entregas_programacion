@@ -2,7 +2,6 @@ package t5;
 
 import java.io.*;
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Aspirantes implements Comparable, Serializable {
@@ -13,15 +12,11 @@ public class Aspirantes implements Comparable, Serializable {
     static Integer cont_num_identificativo = 1;
     static TreeMap<Integer,Aspirantes> lista_aspirantes = new TreeMap<Integer,Aspirantes>();
     static HashSet<Integer> identificativos = new HashSet<Integer>();
-    Scanner teclado = new Scanner(System.in);
 
-    public Aspirantes() {
-        System.out.println("Introduzca los datos del aspirante:\nDNI");
-        this.dni = teclado.nextLine();
-        System.out.println("Nombre");
-        this.nombre = teclado.nextLine();
-        System.out.println("Telefono ");
-        this.telefono = teclado.nextLine();
+    public Aspirantes(String dni, String nombre, String telefono) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.telefono = telefono;
         this.numero_identificacion = cont_num_identificativo;
         cont_num_identificativo++;
     }
@@ -44,16 +39,18 @@ public class Aspirantes implements Comparable, Serializable {
         return nombre.compareToIgnoreCase(a.getNombre());
     }
 
+    public static void InsertaAspirante(Aspirantes a)  {
+        lista_aspirantes.put(a.getNumero_identificacion(),a);
+        identificativos.add(a.getNumero_identificacion());
+    }
 
 
-    public static void add_Aspirantes(Aspirantes a)  {
+    public static void guardarFicheros()  {
         ObjectOutputStream salida_1 = null;
         ObjectOutputStream salida_2 = null;
         try {
-            salida_1 = new ObjectOutputStream( new FileOutputStream("src\\t5\\datos_aspirantes.dat"));
-            salida_2 = new ObjectOutputStream( new FileOutputStream("src\\t5\\numero_identificativos.dat"));
-            lista_aspirantes.put(a.getNumero_identificacion(),a);
-            identificativos.add(a.getNumero_identificacion());
+            salida_1 = new ObjectOutputStream( new FileOutputStream("src\\t5\\aspirantes.dat"));
+            salida_2 = new ObjectOutputStream( new FileOutputStream("src\\t5\\ids_aspirantes.dat"));
             salida_2.writeObject(identificativos);
             salida_1.writeObject(lista_aspirantes);
         } catch ( FileNotFoundException e) {
@@ -72,6 +69,12 @@ public class Aspirantes implements Comparable, Serializable {
                 System.out.println("Error: " + e.getMessage());
             }
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Aspirantes a = (Aspirantes) o;
+        return numero_identificacion.equals(a.getNumero_identificacion());
     }
 
     @Override

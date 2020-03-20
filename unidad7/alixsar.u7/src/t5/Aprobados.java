@@ -4,25 +4,22 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 public abstract class Aprobados {
 
     public static void liasta_aprobados() {
-        HashSet<Integer> num_identificadores = null;
         TreeMap<Integer,ArrayList<Float>> l_calificaciones = null;
         TreeMap<Integer,Aspirantes> l_aspirantes = null;
-        String cadena = "Nombre----------DNI---------Calificación media\n";
         ObjectInputStream entrada_id = null;
         ObjectInputStream entrada_notas = null;
         ObjectInputStream entrada_aspirantes = null;
         try {
-            entrada_id = new ObjectInputStream( new FileInputStream("src\\t5\\numero_identificativos.dat"));
             entrada_notas = new ObjectInputStream( new FileInputStream("src\\t5\\calificaciones.dat"));
-            entrada_aspirantes = new ObjectInputStream( new FileInputStream("src\\t5\\datos_aspirantes.dat"));
-            num_identificadores = (HashSet<Integer>) entrada_id.readObject();
+            entrada_aspirantes = new ObjectInputStream( new FileInputStream("src\\t5\\aspirantes.dat"));
             l_calificaciones = (TreeMap<Integer, ArrayList<Float>>) entrada_notas.readObject();
+            System.out.println(l_calificaciones);
             l_aspirantes = (TreeMap<Integer, Aspirantes>) entrada_aspirantes.readObject();
         } catch ( Exception e) {
             System.out.println(e.getMessage());
@@ -41,21 +38,22 @@ public abstract class Aprobados {
                 System.out.println("Error: " + e.getMessage());
             }
         }
-       for ( Integer identificador  : num_identificadores ) {
-            ArrayList<Float> notas = l_calificaciones.get(identificador);
-            Aspirantes aspi = null;
-            float media = 0;
-            int cont = 0;
-            for ( float nota: notas ) {
-                media += nota;
-                cont++;
-            }
-            media /= (float) cont;
-            if ( media >= 5 ) {
-                aspi = l_aspirantes.get(identificador);
-                cadena =  cadena + aspi.getNombre() + "   " + aspi.getDni() + "   " + media + "\n";
+        System.out.println("Nombre-----------------DNI------------Calificación media");
+        TreeSet<Aspirantes> conj_aspi = new TreeSet<>(l_aspirantes.values());
+        for ( Aspirantes aspi : conj_aspi ){
+            ArrayList<Float> notas = l_calificaciones.get(aspi.getNumero_identificacion());
+            if ( notas != null ){
+                float media = 0;
+                int cont = 0;
+                for ( float nota: notas ) {
+                    media += nota;
+                    cont++;
+                }
+                media /= (float) cont;
+                if ( media >= 5 ) {
+                    System.out.println( aspi.getNombre() + "         " + aspi.getDni() + "           " + media);
+                }
             }
         }
-        System.out.println(cadena);
     }
 }
