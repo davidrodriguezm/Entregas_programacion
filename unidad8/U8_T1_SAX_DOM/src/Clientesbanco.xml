@@ -1,0 +1,29 @@
+<clientes>
+    <!--Lista de clientes y sus datos-->
+    <cliente id="1">
+        <nombre>Alfredo del Valle</nombre>
+        <edad>25</edad>
+        <saldo>55648</saldo>
+        <!--Tiene un prestamo-->
+    </cliente>
+    <cliente id="2">
+        <nombre>Oristila Piesverdes</nombre>
+        <edad>36</edad>
+        <saldo>893</saldo>
+    </cliente>
+    <cliente id="3" info="Saldo negativo">
+        <nombre>Eleuterio Gallinejo</nombre>
+        <edad>46</edad>
+        <saldo>-356</saldo>
+    </cliente>
+    <cliente id="4">
+        <nombre>Eufrasio Zuzunaga</nombre>
+        <edad>68</edad>
+        <saldo>1745</saldo>
+    </cliente>
+    <cliente id="5">
+        <nombre>Silveria Pregonas</nombre>
+        <edad>27</edad>
+        <saldo>6678</saldo>
+    </cliente>
+</clientes>
