@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas info="personas" otro="ejemplo">
+    <!--Lista de personas-->
+    <persona id="1">
+        <nombre>Pepe
+            <apellidos>Los que sean</apellidos>
+        </nombre>
+        <edad>14</edad>
+    </persona>
+    <persona id="2">
+        <!--Comentario de ejemplo-->
+        <nombre>Maria</nombre>
+        <edad>51</edad>
+    </persona>
+    <persona id="3">
+        <nombre>Raul</nombre>
+        <edad>22</edad>
+    </persona>
+</personas>

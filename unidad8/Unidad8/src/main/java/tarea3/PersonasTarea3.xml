@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<personas>
+    <persona>
+        <nombre>Fliorerino</nombre>
+        <edad>23</edad>
+    </persona>
+    <persona>
+        <nombre>Petronila</nombre>
+        <edad>43</edad>
+    </persona>
+    <persona>
+        <nombre>Ortensia</nombre>
+        <edad>63</edad>
+    </persona>
+    <persona>
+        <nombre>Ambrosio</nombre>
+        <edad>57</edad>
+    </persona>
+</personas>
