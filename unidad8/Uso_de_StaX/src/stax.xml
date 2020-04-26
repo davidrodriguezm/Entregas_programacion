@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Personajes>
+	<Personaje Nivel="17" Clase="Ladron">
+		<Fuerza>20</Fuerza>
+		<Magia>15</Magia>
+		<Defensa Resistencia="Fuego" Devilidad="Agua">15</Defensa>
+		<Vida>110</Vida>
+	</Personaje>
+	<Personaje Nivel="40" Clase="Mago">
+		<Fuerza>30</Fuerza>
+		<Magia>100</Magia>
+		<Defensa Resistencia="Magico" Devilidad="Fisico">100</Defensa>
+		<Vida>296</Vida>
+	</Personaje>
+	<Personaje Nivel="50" Clase="Guerrero">
+		<Fuerza>120</Fuerza>
+		<Magia>30</Magia>
+		<Defensa Resistencia="Ninguna" Devilidad="Ninguna">30</Defensa>
+		<Vida>430</Vida>
+	</Personaje>
+	<Personaje Nivel="34" Clase="Caballero">
+		<Fuerza>50</Fuerza>
+		<Magia>10</Magia>
+		<Defensa Resistencia="Tierra" Devilidad="Rayo">10</Defensa>
+		<Vida>354</Vida>
+	</Personaje>
+	<Personaje Nivel="20" Clase="Clerigo">
+		<Fuerza>20</Fuerza>
+		<Magia>50</Magia>
+		<Defensa Resistencia="Agua" Devilidad="Rayo">50</Defensa>
+		<Vida>140</Vida>
+	</Personaje>
+	<Personaje Nivel="53" Clase="Asesino">
+		<Fuerza>60</Fuerza>
+		<Magia>30</Magia>
+		<Defensa Resistencia="Ninguna" Devilidad="Ninguna">30</Defensa>
+		<Vida>309</Vida>
+	</Personaje>
+	<Personaje Nivel="61" Clase="Chaman">
+		<Fuerza>30</Fuerza>
+		<Magia>90</Magia>
+		<Defensa Resistencia="Ninguna" Devilidad="Ninguna">90</Defensa>
+		<Vida>372</Vida>
+	</Personaje>
+	<Personaje Nivel="68" Clase="Samurai">
+		<Fuerza>70</Fuerza>
+		<Magia>20</Magia>
+		<Defensa Resistencia="Fisico" Devilidad="Magico">20</Defensa>
+		<Vida>389</Vida>
+	</Personaje>
+	<Personaje Nivel="57" Clase="Nigromante">
+		<Fuerza>35</Fuerza>
+		<Magia>67</Magia>
+		<Defensa Resistencia="Ninguna" Devilidad="Ninguna">67</Defensa>
+		<Vida>270</Vida>
+	</Personaje>
+	<Personaje Nivel="27" Clase="Sanador">
+		<Fuerza>20</Fuerza>
+		<Magia>40</Magia>
+		<Defensa Resistencia="Rayo" Devilidad="Tierra">40</Defensa>
+		<Vida>140</Vida>
+	</Personaje>
+</Personajes>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Personages>
+    <Personage Clase="Caballero" Nivel="34">
+        <Nombre>Eustaquio</Nombre>
+        <Estadisticas>
+            <Fuerza>50</Fuerza>
+            <Magia>10</Magia>
+            <Vida>354</Vida>
+            <Defensa Devilidad="Rayo" Resistencia="Tierra">70</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Ladron" Nivel="17">
+        <Nombre>Fermin</Nombre>
+        <Estadisticas>
+            <Fuerza>20</Fuerza>
+            <Magia>15</Magia>
+            <Vida>110</Vida>
+            <Defensa Devilidad="Agua" Resistencia="Fuego">10</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Mago" Nivel="40">
+        <Nombre>Enriqueta</Nombre>
+        <Estadisticas>
+            <Fuerza>30</Fuerza>
+            <Magia>100</Magia>
+            <Vida>296</Vida>
+            <Defensa Devilidad="fisico" Resistencia="Magico">40</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Guerrero" Nivel="50">
+        <Nombre>Prudencio</Nombre>
+        <Estadisticas>
+            <Fuerza>120</Fuerza>
+            <Magia>30</Magia>
+            <Vida>430</Vida>
+            <Defensa Devilidad="Ninguna" Resistencia="Ninguna">80</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Clerigo" Nivel="20">
+        <Nombre>Oristila</Nombre>
+        <Estadisticas>
+            <Fuerza>20</Fuerza>
+            <Magia>50</Magia>
+            <Vida>140</Vida>
+            <Defensa Devilidad="Rayo" Resistencia="Agua">40</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Asesino" Nivel="53">
+        <Nombre>Eufrasio</Nombre>
+        <Estadisticas>
+            <Fuerza>60</Fuerza>
+            <Magia>30</Magia>
+            <Vida>309</Vida>
+            <Defensa Devilidad="Ninguna" Resistencia="Ninguna">50</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Sanador" Nivel="27">
+        <Nombre>Ortensia</Nombre>
+        <Estadisticas>
+            <Fuerza>20</Fuerza>
+            <Magia>40</Magia>
+            <Vida>140</Vida>
+            <Defensa Devilidad="Tierra" Resistencia="Rayo">27</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Mago" Nivel="61">
+        <Nombre>Filipito</Nombre>
+        <Estadisticas>
+            <Fuerza>30</Fuerza>
+            <Magia>90</Magia>
+            <Vida>372</Vida>
+            <Defensa Devilidad="Ninguna" Resistencia="Ninguna">50</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Caballero" Nivel="68">
+        <Nombre>Eustaquio</Nombre>
+        <Estadisticas>
+            <Fuerza>70</Fuerza>
+            <Magia>20</Magia>
+            <Vida>389</Vida>
+            <Defensa Devilidad="Magico" Resistencia="Fisico">90</Defensa>
+        </Estadisticas>
+    </Personage>
+    <Personage Clase="Sanador" Nivel="57">
+        <Nombre>Ansio</Nombre>
+        <Estadisticas>
+            <Fuerza>35</Fuerza>
+            <Magia>67</Magia>
+            <Vida>270</Vida>
+            <Defensa Devilidad="Ninguna" Resistencia="Ninguna">53</Defensa>
+        </Estadisticas>
+    </Personage>
+</Personages>
