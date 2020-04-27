@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<personas>
+        
+    <!--COMENTARIO ANADIDO DESDE DOM 1-->
+    <persona>
+        <nombre>Andoni</nombre>
+        <edad>23</edad>
+    </persona>
+        
+    <!--COMENTARIO ANADIDO DESDE DOM 2-->
+    <persona>
+                
+        <nombre>María</nombre>
+                
+        <edad>51</edad>
+            
+    </persona>
+        
+    <!--COMENTARIO ANADIDO DESDE DOM 3-->
+    <persona>
+                
+        <nombre>Raul</nombre>
+                
+        <edad>22</edad>
+            
+    </persona>
+    
+    <!--COMENTARIO ANADIDO DESDE DOM 4-->
+    <persona>
+        <nombre>Gloria</nombre>
+        <edad>27</edad>
+    </persona>
+</personas>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<personas>
+        
+    <!--COMENTARIO ANADIDO DESDE DOM 1-->
+    <persona>
+        <!--COMENTARIO ANADIDO DESDE DOM 1.1-->
+        <nombre>Andoni</nombre>
+        <!--COMENTARIO ANADIDO DESDE DOM 1.2-->
+        <edad>23</edad>
+    </persona>
+        
+    <!--COMENTARIO ANADIDO DESDE DOM 2-->
+    <persona>
+                
+        <!--COMENTARIO ANADIDO DESDE DOM 2.1-->
+        <nombre>María</nombre>
+                
+        <!--COMENTARIO ANADIDO DESDE DOM 2.2-->
+        <edad>51</edad>
+            
+    </persona>
+        
+    <!--COMENTARIO ANADIDO DESDE DOM 3-->
+    <persona>
+                
+        <!--COMENTARIO ANADIDO DESDE DOM 3.1-->
+        <nombre>Raul</nombre>
+                
+        <!--COMENTARIO ANADIDO DESDE DOM 3.2-->
+        <edad>22</edad>
+            
+    </persona>
+    
+    <!--COMENTARIO ANADIDO DESDE DOM 4-->
+    <persona>
+        <!--COMENTARIO ANADIDO DESDE DOM 4.1-->
+        <nombre>Gloria</nombre>
+        <!--COMENTARIO ANADIDO DESDE DOM 4.2-->
+        <edad>27</edad>
+    </persona>
+</personas>

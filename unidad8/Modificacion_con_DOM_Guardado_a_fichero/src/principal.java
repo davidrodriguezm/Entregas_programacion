@@ -34,5 +34,12 @@ public class principal {
         cero.addObjeto(p10);
         //Guardo el contenido del ArrayList en el fichero cero.xml
         cero.guardarDOM();
+        ModificarDOM modifi = new ModificarDOM("src\\Personas.xml");
+        modifi.addUltimo("Gloria",27);
+        modifi.reemplazarEtiqueta("Andoni",23);
+        //Añado el comentario <!-- COMENTARIO AÑADIDO DESDE DOM -->
+        modifi.addComentario("COMENTARIO ANADIDO DESDE DOM");
+        //Guardo el contenido en el fichero dom_modificado.xml
+        modifi.guardarDOM("src\\dom_modificado.xml");
     }
 }
